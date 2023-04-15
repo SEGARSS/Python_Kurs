@@ -17,7 +17,9 @@
 <summary> Дополнительные материалы.</summary>
 
 ![Дополнительные материалы](Dop_materiali(jpg)/Tipi_dannih.jpg)
+
 ![Дополнительные материалы](Dop_materiali(jpg)/Arifmitika.jpg)
+
 ![Дополнительные материалы](Dop_materiali(jpg)/Logicheskie_operacii.jpg)
 </details>
 
