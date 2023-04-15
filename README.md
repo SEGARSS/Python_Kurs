@@ -16,9 +16,9 @@
 <details>
 <summary> Дополнительные материалы.</summary>
 
-![Дополнительные материалы](Tipi_dannih.jpg)
-![Дополнительные материалы](Arifmitika.jpg)
-![Дополнительные материалы](Logicheskie_operacii.jpg)
+![Дополнительные материалы](Dop_materiali(jpg)\Tipi_dannih.jpg)
+![Дополнительные материалы](Dop_materiali(jpg)\Arifmitika.jpg)
+![Дополнительные материалы](Dop_materiali(jpg)\Logicheskie_operacii.jpg)
 </details>
 
 ## Вторая лекция
@@ -41,11 +41,12 @@
 <details>
 <summary> Дополнительные материалы. </summary>
 
-![Дополнительные материалы](Tablica.jpg)
+![Дополнительные материалы](Dop_materiali(jpg)\Tablica.jpg)
 </details>
 
 # Seminari
 * **Решаем задачи**
 # DZ
 * **Домашние задания** 
-
+# Dop_materiali(jpg)
+* **Дополнительные материалы**
