@@ -12,17 +12,13 @@
 def same_by(characteristic, objects):
     if not objects:
         return True
-
     first_characteristic = characteristic(objects[0])
     for obj in objects:
         if characteristic(obj) != first_characteristic:
             return False
-
     return True
-
 def get_length(word):
     return len(word)
-
 words = ['apple', 'banana', 'cherry']
 result = same_by(get_length, words)
 print(result)

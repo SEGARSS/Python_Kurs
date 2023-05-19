@@ -19,35 +19,16 @@ find_farthest_orbit(list_of_orbits), которая среди списка ор
 имеющий такую площадь. Гарантируется, что самая далекая
 планета ровно одна
 '''
-import math
+import random
 
-def find_farthest_orbit(list_of_orbits):
-    max_area = 0
-    farthest_orbit = None
+def generate_sequence_of_orbits(count_of_orbits: int)->list[tuple[int, int]]:
+    result = [(random.randint(1, 10), random.randint(1, 10)) for _ in range(count_of_orbits)]
+    return result
+def find_farthest_orbit(list_of_orbits: list[tuple[int, int]]) -> tuple[int, int]:
+    squares = [(i, e[0]*e[1]) for i, e in enumerate(list_of_orbits) if e[0] != e[1]]
+    max_square = max(squares, key=lambda x: x[1])
+    return list_of_orbits[max_square[0]]
 
-    # Находим максимальную площадь среди всех орбит
-    for orbit in list_of_orbits:
-        a, b = orbit
-        area = math.pi * a * b
-        if area > max_area:
-            max_area = area
-
-    # Находим орбиту с максимальной площадью
-    for orbit in list_of_orbits:
-        a, b = orbit
-        area = math.pi * a * b
-        if area == max_area:
-            farthest_orbit = orbit
-            break
-
-    return farthest_orbit
-list_of_orbits = [(2, 4), (3, 5), (4, 6), (5, 7)]
-farthest_orbit = find_farthest_orbit(list_of_orbits)
-print(farthest_orbit)
-# В этом примере функция найдет орбиту с самой большой площадью и выведет ее полуоси.
-
-
-
-
-
-
+orbits = generate_sequence_of_orbits(10)
+print(orbits)
+print(find_farthest_orbit(orbits))
