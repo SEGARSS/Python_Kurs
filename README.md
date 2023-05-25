@@ -23,7 +23,7 @@
 ![Дополнительные материалы](Dop_materiali(jpg)/Logicheskie_operacii.jpg)
 </details>
 
-## Вторая лекция
+## Вторая лекция 
 * Tema_02_00 - Списки. Способы создания и вывода.
 * Tema_02_01 - Добавления данных в список с помощью функции append.
 * Tema_02_02 - Заполнения списка.
@@ -61,6 +61,17 @@
 ![Дополнительные материалы](Dop_materiali(jpg)/Piton_Sor.jpg)
 </details>
 
+## Четвёртая лекция
+* Tema_04_00 - Анонимные, lambda-функции.
+* Tema_04_01 - Функция map.
+* Tema_04_02 - Функция filter.
+* Tema_04_03 - Функция zip.
+* Tema_04_04 - Функция enumerate.
+<details>
+<summary> Дополнительные материалы. </summary>
+
+![Дополнительные материалы](Dop_materiali(jpg)/4lec.jpg)
+</details>
 
 # Seminari
 * **Решаем задачи**
