@@ -36,3 +36,10 @@ def input_contact(message) -> dict[str, str]:
 
 def input_search(message) -> str:
     return input(message)
+
+def confirm_delete(name: str):
+    confirm = input(text.delete_confirm(name)).lower()
+    if confirm == 'y':
+        return True
+    else:
+        return False

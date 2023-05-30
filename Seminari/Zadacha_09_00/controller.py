@@ -41,6 +41,18 @@ def start():
                     view.print_message(text.empty_search(key_word))
 
             case 7:
-                pass
+                key_word = view.input_search(text.input_delete)
+                res = model.search_contact(key_word)
+                if res:
+                    if len(res) != 1:
+                        view.print_contacts(res, '')
+                        del_id = view.input_search(text.input_index_delete)
+                    else:
+                        del_id = res[0].get('id')
+
+                    name = model.delete_contact(del_id)
+                    view.print_message(text.delete_success(name))
+                else:
+                    view.print_message(text.empty_search(key_word))
             case 8:
                 break

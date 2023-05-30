@@ -4,6 +4,7 @@ path = 'D:\Obuchenie\Python_Kurs\Python_Kurs\Seminari\Zadacha_09_00\phones.txt'
 
 def open_pb():
     global phone_book
+    phone_book = []
     with open(path, 'r', encoding='UTF-8') as file:
         data = file.readlines()
     for contact in data:
@@ -54,3 +55,12 @@ def change_contact(new: dict, index: int) -> str:
             contact['phone'] = new.get('phone', contact.get('phone'))
             contact['comment'] = new.get('comment', contact.get('comment'))
             return contact.get('name')
+        
+def delete_contact(index: int) -> str:
+     global phone_book
+     
+     for i in range(len(phone_book)):
+          if index == phone_book[i].get('id'):
+            name = phone_book[i].get('name')
+            del phone_book[i]
+            return name

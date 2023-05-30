@@ -35,3 +35,12 @@ change_contact = 'Введите новые данные или оставьте
 
 def change_successful(name: str) -> str:
     return f'Контакт {name} успешно изменен!'
+
+input_delete = 'Какой контакт будем удалять? Введите слово для поиска: '
+input_index_delete = 'Ведите индекс контакта для удаления: '
+
+def delete_confirm(name: str):
+    return f'\nВы уверены, что хотите удалить контакт "{name}" (Y/N)?: '
+
+def delete_success(name: str):
+    return f'Контакт "{name}" успешно удален!'
