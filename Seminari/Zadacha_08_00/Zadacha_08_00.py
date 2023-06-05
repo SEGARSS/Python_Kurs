@@ -85,7 +85,7 @@ def delete_record(data: list, fields: list) -> list: # измените запи
     return data
 
 
-file_name = 'phones.txt'
+file_name = 'D:\Obuchenie\Python_Kurs\Seminari\Zadacha_08_00\phones.txt'
 data_fields = ['фамилия', 'имя', 'номер телефона', 'комментарий']
 data = file_read(file_name)
 
